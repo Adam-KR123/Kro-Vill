@@ -11,10 +11,21 @@ body{
 header{
     height: 70vh;
     width: 100vw;
-    background: url(images/main_background.jpg) no-repeat center;
     position: absolute;
     top: 0;
     left: 0;
+    display: flex;
+    align-items: center;
+}
+header #header_background{
+    background: url(images/main_background.jpg) no-repeat center;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: blur(5px);
 }
 nav{
     background-color: rgba(0, 0, 0, 1);
@@ -48,4 +59,32 @@ nav ul li{
 nav ul li:hover , nav img{
     cursor: pointer;
     user-select: none;
+}
+header img{
+    max-height: 30vh;
+}
+header div.flex{
+    display: flex;
+    align-items: center;
+    filter: blur(0px);
+    z-index: 1;
+    gap: 15px;
+    color: black;
+    margin-left: 10vw;
+    background: url(images/main_background.jpg) no-repeat;
+    background-position: 39% 50%;
+    border:black solid 5px;
+    border-radius: 2vw;
+    padding: 2rem;
+}
+div.flex div{
+    width: 40vw;
+    color: red;
+}
+p{
+    font-size: 3rem;
+}
+h1{
+    text-align: center;
+    font-size: 4rem;
 }
