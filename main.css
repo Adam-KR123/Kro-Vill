@@ -1,90 +1,144 @@
-:root{
-    --blue:rgb(0,165,238);
+.lato-bold {
+    font-family: "Lato", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.kanit-bold {
+    font-family: "Kanit", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+header{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    gap: 15px;
+    font-size: 4rem;
+    color: black;
+    height: 10vh;
+    margin: 2vh;
+}
+
+header img{
+    height: 10vh;
+}
+.underline{
+    border: 2px solid black;
+    width: 25vw;
 }
 body{
-    margin:0;
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    background-color: #fdf0d5;
+    margin: 0;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex: row nowrap;
+    gap: 15px;
+    margin-top: 5vh;
+    align-items: baseline;
+}
+.content{
+    background-color: #003049;
+    width: 40vw;
     color: white;
+    padding: 5vh;
 }
-header{
-    height: 70vh;
-    width: 100vw;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
+.content h1{
+    font-size: 3rem;
+    text-align: center;
 }
-header #header_background{
-    background: url(images/main_background.jpg) no-repeat center;
-    position: absolute;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    filter: blur(5px);
-}
-nav{
-    background-color: rgba(0, 0, 0, 1);
-    position: sticky;
-    height: 8vh;
-    top: 0;
-    z-index: 1;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-flow: row;
-    gap: 5vw;
-    border-image: linear-gradient(to right, red 0%, var(--blue) 100%) 1;
-    border-width: 4px;
-    border-style: solid;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    padding: 5px;
-}
-nav ul{
-    display: flex;
-    flex-wrap: nowrap;
-    flex-flow: row;
-    align-items: center;
-    gap: 2vw;
-}
-nav ul li{
-    display: inline;
+.content p{
     font-size: 2rem;
 }
-nav ul li:hover , nav img{
-    cursor: pointer;
-    user-select: none;
+nav{
+    width: 40vw;
 }
-header img{
-    max-height: 30vh;
-}
-header div.flex{
+.button{
+    margin: 2vh;
+    font-size: 3.5rem;
     display: flex;
     align-items: center;
-    filter: blur(0px);
+    flex: row nowrap;
+    border: 5px solid black;
+    border-radius: 10px;
+    height: 15vh;
+}
+.button img{
+    justify-self: baseline;
+    width: 5rem;
+    margin: 1rem;
+    background-color: white;
+    border-radius: 10px;
+}
+footer{
+    background-color: black;
+    margin-top: 5vh;
+    height: 10vh;
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+footer ul{
+    list-style: none;
+    font-size: 1.5rem;
+    margin: 15px;
+}
+footer ul li{
+    margin: 5px;
+}
+footer img{
+    height: 5vh;
+    padding: 10px;
+}
+.load{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
     z-index: 1;
-    gap: 15px;
-    color: black;
-    margin-left: 10vw;
-    background: url(images/main_background.jpg) no-repeat;
-    background-position: 39% 50%;
-    border:black solid 5px;
-    border-radius: 2vw;
-    padding: 2rem;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    animation: loading 2s ease-in-out 3s 1 alternate, textpop 1s ease-in-out 1.5s 1 forwards;
+    font-size: 10rem;
+    gap: 20px;
 }
-div.flex div{
-    width: 40vw;
-    color: red;
+@keyframes textpop{
+    0%{
+        font-size: 10rem;
+    }
+    50%{
+        font-size: 11rem;
+    }
+    100%{
+        font-size: 10rem;
+    }
 }
-p{
-    font-size: 3rem;
+@keyframes loading{
+    from{
+        transform: translate(0,0);
+    }
+    to{
+        transform: translate(0,200vh);
+    }
 }
-h1{
-    text-align: center;
-    font-size: 4rem;
+.load img{
+    height: 40vh;
+    animation: rotation 1s ease-in-out 0.5s forwards
 }
+@keyframes rotation{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
