@@ -1,33 +1,137 @@
 <!DOCTYPE html>
 <html lang="hu">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./css/index.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nerko+One&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nerko+One&display=swap" rel="stylesheet">
-        <title>Kro-Vill</title>
-    </head>
-    <body>
-        <div class="load kanit-bold">
-            <img src="images/kro-vill_logo.png" draggable="false" alt="">
-            <span>Kro-Vill</span>
-        </div>
-        <main class="lato-bold">
-            <nav>
-                <img src="images/kro-vill_logo.png" alt="">
-                <ul>
-                </ul>
-            </nav>
-            <header>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nerko+One&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Kro-Vill</title>
+</head>
+
+<body>
+    <div id="popup-div">
+        <div id="popup-content-div">
+            <div>
+                <h3>Section 1</h3>
                 <div>
-                    <h1><span>Kro</span>-Vill <span>KFT</span></h1>
-                    <h2>Fűtés, hűtés egyaránt!</h2>
+                    <div class="panel-div">
+                        <h4>Product name</h4>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam voluptate architecto pariatur tempore voluptates totam voluptatem voluptatibus quaerat rerum earum, ducimus eligendi! Odit quisquam rerum explicabo, fugiat consequatur dolor accusantium.</p>
+                        <button>Something</button>
+                    </div>
+                    <div class="panel-div">
+                        <h4>Product name</h4>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam voluptate architecto pariatur tempore voluptates totam voluptatem voluptatibus quaerat rerum earum, ducimus eligendi! Odit quisquam rerum explicabo, fugiat consequatur dolor accusantium.</p>
+                        <button>Something</button>
+                    </div>
                 </div>
-            </header>
-        </main>
-    </body>
-    <script src="scripts/main.js"></script>
+            </div>
+            <div>
+                <h3>Section 2</h3>
+                <div>
+                    <div class="panel-div">
+                        <h4>Product name</h4>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam voluptate architecto pariatur tempore voluptates totam voluptatem voluptatibus quaerat rerum earum, ducimus eligendi! Odit quisquam rerum explicabo, fugiat consequatur dolor accusantium.</p>
+                        <button>Something</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="load" class="poppins-regular">
+        <img src="images/kro-vill_logo.png" draggable="false" alt="">
+        <span>Kro-Vill</span>
+    </div>
+    <nav>
+        <div id="menu-icon-div" onclick="toggleMenu()">
+            <div></div>
+            <div>
+                <div></div>
+            </div>
+            <div></div>
+        </div>
+        <div id="menu-div">
+
+        </div>
+    </nav>
+    <main>
+        <header>
+            <div>
+                <img src="images/kro-vill_logo.png" alt="">
+            </div>
+            <div>
+                <h1 class="poppins-regular"><span>Kro</span>-Vill <span>KFT</span></h1>
+                <h2 class="poppins-regular">Fűtés, hűtés egyaránt!</h2>
+            </div>
+            
+        </header>
+        <div class="why_us poppins-regular">
+            <div>
+                <h1>Miért használjon klímát?</h1>
+                <p>A klíma növeli a komfortot, javítja a levegő minőségét, és segít fenntartani az ideális hőmérsékletet
+                    egész évben. Nyáron hűt, télen fűt, csökkenti a páratartalmat, és hozzájárul az egészségesebb
+                    beltéri környezethez. Energiatakarékos modellekkel még spórolhat is!</p>
+            </div>
+            <img src="images/kro-vill_headerbg.png" alt="">
+        </div>
+        <div class="who_we ">
+            <div class="cover"></div>
+            <div>
+                <h1>Miért a Kro-Vill?</h1>
+                <p>Cégünk több évnyi tapasztalattal rendelkezik a különböző lakossági klímák illetve nagyobb
+                    hőszivattyúk felszerelésével illetve karbantartásával. A külömböző klímatechnikai eszközökön kívül
+                    cégünk foglalkozik gépészeti szereléssel is.</p>
+            </div>
+        </div>
+        <div class="offers poppins-regular">
+            <div>
+                <h1>Klíma</h1>
+                <hr>
+                <p>
+                    A külömböző lakossági klímák tökéletes választások az otthon hűtésére és fűtésére. Nézze meg
+                    katalógusunkat, vagy kérjen ajánlatot most!
+                </p>
+                <button onclick="togglePopup()" class="catalog_k">Katalógus</button>
+                <button class="offer">Ajánlat kérése</button>
+            </div>
+            <div>
+                <h1>Hőszivattyú</h1>
+                <hr>
+                <p>
+                    A hőszivattyúk a nagyobb házak fűtésére a legkiválóbbak. Ezek a készülékek akár a legnagyobb tereket
+                    is képesek lehűteni, vagy befűteni.
+                </p>
+                <button onclick="togglePopup()" class="catalog_h">Katalógus</button>
+                <button class="offer">Ajánlat kérése</button>
+            </div>
+            <div>
+                <h1>Gépészet</h1>
+                <hr>
+                <p>
+                    Cégünk külömböző gépészeti szerelésekkel is foglalkozik. Akár társasházak és egyéb nagyobb épületek
+                    gépészetét is.
+                </p>
+                <button class="offer">Ajánlat kérése</button>
+            </div>
+        </div>
+        <div class="notify poppins-regular">
+            <h1>Elérhetőségeink</h1>
+            <p>Ha bármelyik klíma vagy hőszivattyú felkeltette az érdeklődését és ajánltatot szeretne kérni,vagy esetleg érdeklődne a készülékek után, kérem írjon az alábbi email címre vagy hívja a következő telefonszámot. A gépészeti munkákról is kérem ezen a módon érdeklődjön</p>
+            <div>
+                <h2>Email: kreitzerrr@gmail.hu</h2>
+                <h2>Telefon: +36 30  640 4795</h2>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="scripts/main.js"></script>
+
 </html>
