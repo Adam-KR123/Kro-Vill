@@ -16,6 +16,10 @@
     font-style: normal;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     overflow-x: hidden;
     margin: 0;
@@ -249,17 +253,33 @@ header div img{
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 1rem;
+
+    overflow-y: scroll;
+}
+
+#popup-content-div > div:first-child {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #popup-content-div > div > div {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
 }
 
 .panel-div {
     display: flex;
     flex-direction: column;
+
+    margin: 1rem;
+    padding: 0.4rem;
+
+    max-width: 40%;
+
+    background-color: burlywood;
+    border-radius: 5px;
 }
 
 .why_us{

@@ -11,6 +11,11 @@ function toggleMenu() {
     document.querySelector("body").classList.toggle("open-menu")
 }
 
-function togglePopup() {
+function togglePopup(option = "") {
     document.querySelector("#popup-div").classList.toggle("open-popup")
+    if (option == "one") document.querySelector("#section-one").scrollIntoView({behavior: "smooth"})
+    if (option == "two") document.querySelector("#section-two").scrollIntoView({behavior: "smooth"})
+}
+function scrollingTo(){
+    document.querySelector(".notify").scrollIntoView()
 }
