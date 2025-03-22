@@ -8,156 +8,16 @@
     font-weight: 700;
     font-style: normal;
 }
-
-header {
-    display: flex;
-    align-items: end;
-    justify-content: center;
-    gap: 15px;
-    font-size: 5vw;
-    color: black;
-    height: 10vh;
-    margin: 2vh;
-}
-
-header img {
-    height: 10vh;
-}
-
-.underline {
-    border: 2px solid black;
-    width: 25vw;
-}
-
 body {
-    background: rgb(253,240,213);
-    background: url("../images/kro_vill_background_01.jpg");
-
     overflow-x: hidden;
-
-    background-repeat: no-repeat;
-    background-size: cover;
     margin: 0;
     animation: noscroll 17s normal 0s 1 forwards;
 }
-
-main {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 15px;
-    margin-top: 5vh;
-    align-items: baseline;
-
-    min-height: 71vh;
-}
-
-.content {
-    background-color: #003049;
-    text-align: justify;
-    width: 40vw;
-    color: white;
-    padding: 5vh;
-
-    box-shadow: 1rem 1rem 50px #001e2d;
-}
-
-.content h1 {
-    font-size: 4vw;
-    margin-top: 0;
-    text-align: center;
-}
-
-.content p {
-    font-size: 3vw;
-}
-
-nav {
-    width: 40vw;
-    height: 40vh;
-
-    display: flex;
-    flex-direction: column;
-    pointer-events: none;
-    transition: 0.5s;
-}
-
-.button {
-    
-    font-size: 3vw;
-    display: flex;
-    align-items: center;
-    flex: row nowrap;
-    border: 5px solid black;
-    border-radius: 10px;
-    /*height: 15vh;*/
-
-    height: 100%;
-
-    cursor: pointer;
-    user-select: none;
-    pointer-events: all;
-    transition: 0.5s;
-}
-
-a {
-    transition: 0.5s;
-    margin: 0 2vh 2vh 2vh;
-    text-decoration: none;
-    height: 25%;
-}
-
-nav:hover a {
-    height: 20%;
-} 
-
-nav a:hover {
-    height: 40% !important;
-    font-size: 4vw;
-}
-
-.button p {
-    margin: 0;
-}
-
-.button img {
-    justify-self: baseline;
-    height: 50%;
-    margin: 1rem;
-    background-color: white;
-}
-
-footer {
-    background-color: black;
-    height: 10vh;
-    color: white;
-    padding: 10px;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-footer ul {
-    list-style: none;
-    font-size: 2vw;
-    margin: 15px;
-}
-
-footer ul li {
-    margin: 5px;
-}
-
-footer img {
-    height: 5vh;
-    padding: 10px;
-}
-
 .load {
     width: 100vw;
     height: 100vh;
-    background-color: white;
     z-index: 1;
+    background: white;
     position: absolute;
     top: 0;
     display: flex;
@@ -167,6 +27,9 @@ footer img {
     animation: loading 2s ease-in-out 3s 1 forwards, textpop 1s ease-in-out 1.5s 1 forwards;
     font-size: 12vw;
     gap: 20px;
+}
+.load img{
+    height: auto;
 }
 @keyframes noscroll{
     from{
@@ -185,7 +48,7 @@ footer img {
         font-size: 14vw;
     }
     100%{
-        font-size: 16vw;
+        font-size: 12vw;
     }
 }
 
@@ -211,4 +74,37 @@ footer img {
     to {
         transform: rotate(360deg);
     }
+}
+nav{
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+nav img{
+    height: 80%;
+}
+header{
+    height: 80vh;
+    width: 100vw;
+    background: #caf0f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header div h1{
+    font-size: 6vw;
+}
+header div h2{
+    font-size: 3vw;
+}
+header h1 span:nth-child(1){
+    color: red;
+}
+header h1 span:nth-child(2){
+    color: rgb(0, 195, 255);
+}
+main{
+    height: auto;
 }
