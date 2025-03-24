@@ -398,6 +398,9 @@ header div img{
     #menu-icon-div {
         width: 15vw;
     }
+    #load{
+        flex-direction: column;
+    }
 }
 .notify{
     background: #03045E;
