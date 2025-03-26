@@ -18,13 +18,13 @@ function togglePopup2(product=""){
             document.getElementById("product").textContent="Aux Aura"
             document.getElementById("product-img").src="images/Aura.jpg"
             let list=document.getElementById("product-details")
-            list.children[0].textContent="Teljes név: AUX AURA ASW-H12C5A4/CAR3DI-D0-4 oldalfali split klíma csomag 3,5 kW"
-            list.children[1].textContent="Hűtési teljesítmény: 3,5 kW"
-            list.children[2].textContent="Fűtési teljesítmény: 4.2kW"
-            list.children[3].textContent="SEER: 8.5"
-            list.children[4].textContent="SCOP: 4.6"
-            list.children[5].textContent="Energiaosztály: A+++/A++"
-            list.children[6].textContent="Ár: 322.900 Ft + Telepítési díj"
+            list.children[0].innerHTML="<b>Teljes név:</b> AUX AURA ASW-H12C5A4/CAR3DI-D0-4 oldalfali split klíma csomag 3,5 kW"
+            list.children[1].innerHTML="<b>Hűtési teljesítmény:</b> 3,5 kW"
+            list.children[2].innerHTML="<b>Fűtési teljesítmény:</b> 4.2kW"
+            list.children[3].innerHTML="<b>SEER:</b> 8.5"
+            list.children[4].innerHTML="<b>SCOP:</b> 4.6"
+            list.children[5].innerHTML="<b>Energiaosztály:</b> A+++/A++"
+            list.children[6].innerHTML="<b>Ár:</b> 322.900 Ft + Telepítési díj"
             break
         
         default:

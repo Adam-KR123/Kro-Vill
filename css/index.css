@@ -447,7 +447,19 @@ header div img{
         left: -100vw;
         width: 100vw;
     }
-
+    #popup-content-div > div > div {
+        align-items: center;
+        flex-flow: column;
+    }
+    #popup-content-div-2 div:nth-child(2){
+        flex-direction: column;
+    }
+    #popup-content-div-2 img{
+        width: 90%;
+    }
+    .panel-div{
+        max-width: 90%;
+    }
     .open-menu #menu-div {
         transform: translateX(100vw);
     }
