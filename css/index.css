@@ -224,11 +224,72 @@ header h1 span:nth-child(2){
 header div img{
     height: calc(12rem + 10vw);
 }
+/*popup-2*/
+#popup-div-2{
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    z-index: 1;
+}
+#popup-content-div-2 {
+    position: fixed;
+    width: 60%;
+    height: 60%;
+    background-color: whitesmoke;
 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+
+    overflow-y: scroll;
+}
+#popup-content-div-2 div:first-child{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+
+}
+#popup-content-div-2 div:nth-child(2){
+    display: flex;
+    align-items: center;
+}
+#popup-content-div-2 img{
+    width: 60%;
+    border: 1px #03045E solid;
+}
+#popup-content-div-2 ul{
+    list-style: none;
+}
+#popup-content-div-2 ul li{
+    margin-bottom: 0.5rem;
+}
+/*popup 1*/
 .open-popup {
     visibility: visible !important;
 }
-
+#popup-div h4{
+    font-size: 1.5rem;
+    text-align: center;
+}
+#popup-div img{
+    margin-bottom: 1rem;
+}
+#popup-div button, #popup-div-2 button{
+    border: none;
+    background-color: #03045E;
+    font-size: 1rem;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
 #popup-div {
     position: fixed;
     top: 0;
@@ -240,7 +301,7 @@ header div img{
     backdrop-filter: blur(5px);
 
     visibility: hidden;
-    z-index: 100;
+    z-index: 0;
 }
 
 #popup-content-div {
