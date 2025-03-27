@@ -55,7 +55,7 @@ function togglePopup2(product=""){
             list.children[1].innerHTML="<b>Hűtési teljesítmény:</b> 3,5 kW"
             list.children[2].innerHTML="<b>Fűtési teljesítmény:</b> 4.2 kW"
             list.children[3].innerHTML="<b>SEER:</b> 8.5"
-            list.children[4].innerHTML="<b>SCOP:</b> -"
+            list.children[4].innerHTML="<b>SCOP:</b> 4.6"
             list.children[5].innerHTML="<b>Energiaosztály:</b> A+++"
             list.children[6].innerHTML="<b>Ár:</b> 498.729 Ft"
             break
@@ -174,6 +174,6 @@ function togglePopup(option = "") {
     if (option == "one") document.querySelector("#section-one").scrollIntoView({behavior: "smooth"})
     if (option == "two") document.querySelector("#section-two").scrollIntoView({behavior: "smooth"})
 }
-function scrollingTo(){
-    document.querySelector(".notify").scrollIntoView()
+function scrollingTo(where=""){
+    document.querySelector(where).scrollIntoView()
 }
