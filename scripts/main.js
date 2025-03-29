@@ -176,8 +176,18 @@ function togglePopup(option = "") {
     if(document.querySelector("#popup-div").classList.contains("open-popup")==false){
         document.querySelector("#popup-div").classList.toggle("open-popup")
     }
-    if (option == "one") document.querySelector("#section-one").scrollIntoView({behavior: "smooth"})
-    if (option == "two") document.querySelector("#section-two").scrollIntoView({behavior: "smooth"})
+    if (option == "one"){
+        if(document.querySelector("body").classList.contains("open-menu")){
+            document.querySelector("body").classList.toggle("open-menu")
+        }
+        document.querySelector("#section-one").scrollIntoView({behavior: "smooth"})
+    } 
+    if (option == "two"){
+        if(document.querySelector("body").classList.contains("open-menu")){
+            document.querySelector("body").classList.toggle("open-menu")
+        }
+        document.querySelector("#section-two").scrollIntoView({behavior: "smooth"})
+    } 
 }
 function scrollingTo(where=""){
     if(document.querySelector("#popup-div-2").classList.contains("open-popup")){
