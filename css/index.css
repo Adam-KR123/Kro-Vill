@@ -156,18 +156,25 @@ nav{
     position: fixed;
     width: 20vw;
     height: 100vh;
-
+    display: flex;
+    flex-direction: column;
     background-color: whitesmoke;
     transition: 1s ease-out transform;
+    align-items: center;
+    gap: 1rem;
 }
-#menu-div div{
-    display: flex;
-    flex-flow: column;
-}
- #menu-div div button{
+ #menu-div button{
     border: none;
     background-color: none;
-
+    width: 80%;
+    font-size: calc(1.5rem + 0.5vw);
+    font-weight: bold;
+    background-color: whitesmoke;
+    color: #03045E;
+    cursor: pointer;
+ }
+ #menu-div button:first-child{
+    margin-top: 10vh;
  }
 .open-menu #menu-div {
     transform: translateX(20vw);
