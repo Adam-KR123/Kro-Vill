@@ -7,7 +7,7 @@ else{
     sessionStorage.setItem("load", true)
 }
 
-function toggleMenu() {   
+function toggleMenu() {
     document.querySelector("body").classList.toggle("open-menu")
 }
 function togglePopup2(product=""){
@@ -169,11 +169,22 @@ function togglePopup2(product=""){
             break
     }
 }
-function togglePopup(option = "") {
+document.getElementById("close").addEventListener('click',e=>{
     document.querySelector("#popup-div").classList.toggle("open-popup")
+})
+function togglePopup(option = "") {
+    if(document.querySelector("#popup-div").classList.contains("open-popup")==false){
+        document.querySelector("#popup-div").classList.toggle("open-popup")
+    }
     if (option == "one") document.querySelector("#section-one").scrollIntoView({behavior: "smooth"})
     if (option == "two") document.querySelector("#section-two").scrollIntoView({behavior: "smooth"})
 }
 function scrollingTo(where=""){
+    if(document.querySelector("#popup-div-2").classList.contains("open-popup")){
+        document.querySelector("#popup-div-2").classList.toggle("open-popup")
+    }
+    if(document.querySelector("#popup-div").classList.toggle("open-popup")){
+        document.querySelector("#popup-div").classList.toggle("open-popup")
+    }
     document.querySelector(where).scrollIntoView()
 }

@@ -169,9 +169,11 @@ nav{
     width: 80%;
     font-size: calc(1.5rem + 0.5vw);
     font-weight: bold;
-    background-color: whitesmoke;
-    color: #03045E;
+    background-color: #03045E;
+    color: white;
     cursor: pointer;
+    border-radius: 10px;
+    padding: 1rem;
  }
  #menu-div button:first-child{
     margin-top: 10vh;
