@@ -219,7 +219,9 @@ header{
     justify-content: space-evenly;
     color: white;
 }
-
+header div:nth-child(2){
+    max-height: 30vh;
+}
 header div h1{
     font-size: calc(3rem + 2vw);
     text-align: center;
@@ -228,6 +230,8 @@ header div h1{
 header div h2{
     font-size: calc(1.5rem + 1vw);
     text-align: center;
+    color: white;
+    margin-top: 7rem;
 }
 
 header h1 span:nth-child(1){
@@ -493,6 +497,12 @@ header div img{
     }
     #load{
         flex-direction: column;
+    }
+    header div:nth-child(2){
+        max-height: none;
+    }
+    header div h2{
+        margin-top: none;
     }
 }
 .notify{
