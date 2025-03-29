@@ -152,9 +152,9 @@ nav{
 
 #menu-div {
     top: 0;
-    left: -20vw;
+    left: -50vw;
     position: fixed;
-    width: 20vw;
+    width: 35vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -167,7 +167,7 @@ nav{
     border: none;
     background-color: none;
     width: 80%;
-    font-size: calc(1.5rem + 0.5vw);
+    font-size: calc(1rem + 0.5vw);
     font-weight: bold;
     background-color: #03045E;
     color: white;
@@ -179,11 +179,11 @@ nav{
     margin-top: 10vh;
  }
 .open-menu #menu-div {
-    transform: translateX(20vw);
+    transform: translateX(50vw);
 }
 
 .open-menu #menu-icon-div {
-    transform: translate(15vw);
+    transform: translate(35vw);
     transition: 0.85s 0.15s ease-out transform;
 }
 
@@ -204,7 +204,7 @@ nav{
 }
 
 .open-menu {
-    margin-left: 20vw;
+    margin-left: 35vw;
 }
 
 header{
